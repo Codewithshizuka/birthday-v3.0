@@ -7,7 +7,10 @@ import IntroScreen from "@/components/screens/IntroScreen"
 import CakeScreen from "@/components/screens/CakeScreen"
 import PhotosScreen from "@/components/screens/PhotosScreen"
 import MessageScreen from "@/components/screens/MessageScreen"
+import GiftScreen from "@/components/screens/GiftScreen"
+import FinalScreen from "@/components/screens/FinalScreen"
 import MusicPlayer from "@/components/MusicPlayer"
+
 export default function HomePage() {
   const [currentScreen, setCurrentScreen] = useState(0)
 
@@ -17,11 +20,14 @@ export default function HomePage() {
     <CakeScreen key="cake" onNext={() => setCurrentScreen(3)} />,
     <PhotosScreen key="photos" onNext={() => setCurrentScreen(4)} />,
     <MessageScreen key="message" onNext={() => setCurrentScreen(5)} />,
+    <GiftScreen key="gift" onNext={() => setCurrentScreen(6)} />,
+    <FinalScreen key="final" onNext={() => setCurrentScreen(0)} />,
   ]
 
   return (
     <main className="min-h-screen bg-gradient-to-tr from-rose-950/40 via-black to-rose-950/40 overflow-hidden relative">
-    <MusicPlayer />
+      <MusicPlayer />
+
       <div className="relative z-10 flex min-h-screen items-center justify-center p-4 md:p-6">
         <AnimatePresence mode="wait">
           <motion.div
