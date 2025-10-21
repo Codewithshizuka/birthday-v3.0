@@ -21,7 +21,7 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen bg-gradient-to-tr from-rose-950/40 via-black to-rose-950/40 overflow-hidden relative">
-
+    <MusicPlayer />
       <div className="relative z-10 flex min-h-screen items-center justify-center p-4 md:p-6">
         <AnimatePresence mode="wait">
           <motion.div
