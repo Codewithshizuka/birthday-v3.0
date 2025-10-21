@@ -7,7 +7,7 @@ import IntroScreen from "@/components/screens/IntroScreen"
 import CakeScreen from "@/components/screens/CakeScreen"
 import PhotosScreen from "@/components/screens/PhotosScreen"
 import MessageScreen from "@/components/screens/MessageScreen"
-
+import MusicPlayer from "@/components/MusicPlayer"
 export default function HomePage() {
   const [currentScreen, setCurrentScreen] = useState(0)
 
