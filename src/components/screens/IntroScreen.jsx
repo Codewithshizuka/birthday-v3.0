@@ -19,9 +19,8 @@ export default function IntroScreen({ onNext }) {
                             filter: "drop-shadow(0 0 20px rgba(255,105,180,0.4))",
                         }}>
                         A cutie pie was born today, 26 October 
-Yes it's you mister Arslan sahib (jaaanu)!
                     </h1>
-                    <p className="mt-4 text-xl text-pink-200">Yes, it’s YOU! A little surprise awaits...</p>
+                    <p className="mt-4 text-xl text-pink-200">Yes, it’s YOU Mr Arslan sahib (jaaanu)!! A little surprise awaits...</p>
                 </div>
 
                 <div className="mt-8">
