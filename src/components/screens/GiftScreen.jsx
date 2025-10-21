@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function GiftScreen({ onNext }) {
   return (
-    <div className="text-center">
+    <div className="flex flex-col items-center justify-center min-h-screen text-center">
       <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
